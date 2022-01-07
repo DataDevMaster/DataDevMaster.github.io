@@ -29,11 +29,11 @@ comments: false
 <p>Contact me</p>
 
 <form id=contactForm>
-<input name=name type=text class=contact-input placeholder="Your NAME. Help me remember you" />
-<input name=email type=text class=contact-input placeholder="Your EMAIL. Help me reply you" />
-<textarea name=text class=contact-input placeholder="Your MESSAGE. Help me understand you" required=required></textarea>
-<input name=sendButton type=submit value="SEND"/>
-
+    <input name=name type=text class=contact-input placeholder="Your NAME. Help me remember you" />
+    <input name=email type=text class=contact-input placeholder="Your EMAIL. Help me reply you" />
+    <textarea name=text class=contact-input placeholder="Your MESSAGE. Help me understand you" required=required></textarea>
+    <input name=sendButton type=submit value="SEND"/>
+</form>
 <script>
     const serviceURL="https://script.google.com/macros/s/AKfycbx25CLNzLMpIPCdswoFWjn-fbQDyR1W4bLbJAlPAd1PLuto-zU/exec";const contactForm=document.getElementById("contactForm")
     function setContactSubmit(value,disabled=false)

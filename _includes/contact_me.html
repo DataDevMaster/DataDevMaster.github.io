@@ -1,0 +1,12 @@
+<form id=contactForm>
+    <input name=name type=text class=contact-input placeholder="Your NAME. Help me remember you" />
+    <input name=email type=text class=contact-input placeholder="Your EMAIL. Help me reply you" />
+    <textarea name=text class=contact-input placeholder="Your MESSAGE. Help me understand you" required=required></textarea>
+<input name=sendButton type=submit value="SEND"/>
+
+<script>
+    const serviceURL="https://script.google.com/macros/s/AKfycbx25CLNzLMpIPCdswoFWjn-fbQDyR1W4bLbJAlPAd1PLuto-zU/exec";const contactForm=document.getElementById("contactForm")
+    function setContactSubmit(value,disabled=false)
+    {contactForm.sendButton.value=value;contactForm.sendButton.disabled=disabled;}
+    contactForm.addEventListener('submit',async function(event){event.preventDefault();setContactSubmit('...',true);const formData={'name':contactForm.name.value,'mail':contactForm.email.value,'text':contactForm.text.value,};const request={redirect:'follow',method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded',},body:object2url(formData)};const response=await fetch(serviceURL,request).then(res=>{setContactSubmit('DONE!',true);;}).catch(e=>{setContactSubmit('ERROR! TRY AGAIN',false);});});
+</script>
