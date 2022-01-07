@@ -29,9 +29,8 @@ comments: false
 <p>Contact me</p>
 
 <form id=contactForm>
-    <input name=name type=text class=contact-input placeholder="Your NAME. Help me remember you" />
-    <input name=email type=text class=contact-input placeholder="Your EMAIL. Help me reply you" />
-    <textarea name=text class=contact-input placeholder="Your MESSAGE. Help me understand you" required=required></textarea>
+    <input name=email type=text placeholder="Email" />
+    <textarea name=text placeholder="Message" required=required></textarea>
     <input name=sendButton type=submit value="SEND"/>
 </form>
 <script>
