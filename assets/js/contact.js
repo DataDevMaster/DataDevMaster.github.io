@@ -1,0 +1,5 @@
+const serviceURL="https://script.google.com/macros/s/AKfycbx25CLNzLMpIPCdswoFWjn-fbQDyR1W4bLbJAlPAd1PLuto-zU/exec";const contactForm=document.getElementById("contactForm")
+function object2url(obj){var objs=[];for(var prob in obj){var key=encodeURIComponent(prob);var val=encodeURIComponent(obj[prob]);objs.push(key+"="+val);}return objs.join("&");}
+function setContactSubmit(value,disabled=false)
+{contactForm.sendButton.value=value;contactForm.sendButton.disabled=disabled;}
+contactForm.addEventListener('submit',async function(event){event.preventDefault();setContactSubmit('...',true);const formData={'name':contactForm.name.value,'mail':contactForm.email.value,'text':contactForm.text.value,};const request={redirect:'follow',method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded',},body:object2url(formData)};const response=await fetch(serviceURL,request).then(res=>{setContactSubmit('DONE!',true);;}).catch(e=>{setContactSubmit('ERROR! TRY AGAIN',false);});});
