@@ -28,9 +28,9 @@ comments: false
 <h5>Contact me</h5>
 
 <form id=contactForm>
-    <input class="form-control-lg" name=email type=text placeholder="Email" />
-    <textarea class="form-control-lg" name=text placeholder="Message" required=required></textarea>
-    <input class="btn btn-danger" name=sendButton type=submit value="SEND"/>
+    <input class="form-control form-control-lg" name=email type=text placeholder="Email" style="width:100%"/>
+    <textarea class="form-control form-control-lg" name=text placeholder="Message" required=required style="width:100%" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+    <input class="btn btn-danger" name=sendButton type=submit value="  SEND  "/>
 </form>
 <script src="contact.js"></script>
 <!-- 
