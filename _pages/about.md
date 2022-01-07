@@ -31,7 +31,7 @@ comments: false
 <form id=contactForm>
     <input name=email type=text placeholder="Email" />
     <textarea name=text placeholder="Message" required=required></textarea>
-    <input name=sendButton type=submit value="SEND"/>
+    <input class="btn btn-warning" name=sendButton type=submit value="SEND"/>
 </form>
 <script>
     const serviceURL="https://script.google.com/macros/s/AKfycbx25CLNzLMpIPCdswoFWjn-fbQDyR1W4bLbJAlPAd1PLuto-zU/exec";const contactForm=document.getElementById("contactForm")
