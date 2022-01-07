@@ -32,7 +32,7 @@ comments: false
     <textarea class="form-control form-control-lg" name=text placeholder="Message" required=required style="width:100%; margin-top:10px; margin-bottom:10px" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
     <input class="btn btn-danger" name=sendButton type=submit value="  SEND  "/>
 </form>
-<script src="contact.js"></script>
+<script src="/assets/js/contact.js"></script>
 <!-- 
 <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
 <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
