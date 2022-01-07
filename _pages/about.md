@@ -25,20 +25,14 @@ comments: false
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>DataDevMaster</h5>
-<p>Contact me</p>
+<h5>Contact me</h5>
 
 <form id=contactForm>
-    <input name=email type=text placeholder="Email" />
-    <textarea name=text placeholder="Message" required=required></textarea>
-    <input class="btn btn-warning" name=sendButton type=submit value="SEND"/>
+    <input class="form-control-lg" name=email type=text placeholder="Email" />
+    <textarea class="form-control-lg" name=text placeholder="Message" required=required></textarea>
+    <input class="btn btn-danger" name=sendButton type=submit value="SEND"/>
 </form>
-<script>
-    const serviceURL="https://script.google.com/macros/s/AKfycbx25CLNzLMpIPCdswoFWjn-fbQDyR1W4bLbJAlPAd1PLuto-zU/exec";const contactForm=document.getElementById("contactForm")
-    function setContactSubmit(value,disabled=false)
-    {contactForm.sendButton.value=value;contactForm.sendButton.disabled=disabled;}
-    contactForm.addEventListener('submit',async function(event){event.preventDefault();setContactSubmit('...',true);const formData={'name':contactForm.name.value,'mail':contactForm.email.value,'text':contactForm.text.value,};const request={redirect:'follow',method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded',},body:object2url(formData)};const response=await fetch(serviceURL,request).then(res=>{setContactSubmit('DONE!',true);;}).catch(e=>{setContactSubmit('ERROR! TRY AGAIN',false);});});
-</script>
+<script type=text/javascript src=contact.js></script>
 <!-- 
 <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
 <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
