@@ -10,7 +10,10 @@ comments: false
 
 <p>I started this blog on a dull day during the COVID-19 pandemic. Before becoming a data scientist, I am an enthusiastic learner. It can not be denied that most of my knowledge in the field is from the Internet. I realize it's my turn to share and help other people. It's the openness to share which makes the power of the Internet.</p>
 
-<!-- <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p> -->
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/internet.jpg" alt="Data scientist, Programmer, Sharing the knowledge to help the world better"/></p>
+
+<p>I will be delighted if my posts help.</p>
+<p>Sincerely.</p>
 
 <!-- <h4>Documentation</h4>
 
